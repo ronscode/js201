@@ -10,7 +10,22 @@
 // tipAmount(100, 'good') --> 20
 // tipAmount(40, 'fair') --> 6
 
-
+function tipAmount(aBill, serviceLevel) {
+  switch (serviceLevel) {
+    case "good":
+      return (aBill * .2)
+      break;
+      case "fair":
+        return (aBill * .15)
+      break;
+      case "poor":
+        return (aBill * .10)
+      break;
+  
+    default:
+      break;
+  }
+}
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "totalAmount" that takes the same arguments as "tipAmount"
@@ -21,6 +36,11 @@
 // totalAmount(100, 'good') --> 120
 // totalAmount(40, 'fair') --> 46
 
+function totalAmount(aBill, serviceLevel) {
+  let currTip = tipAmount(aBill,serviceLevel);
+  let currTotal =  aBill + currTip;
+  return currTotal
+}
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -31,3 +51,9 @@
 // Examples:
 // splitAmount(100, 'good', 5) --> 24
 // splitAmount(40, 'fair', 2) --> 23
+
+function splitAmount(aBill, serviceLevel, numOfDiners) { 
+  let preTotal = totalAmount(aBill,serviceLevel);
+  let perPersonCost = preTotal / numOfDiners;
+  return perPersonCost
+}

@@ -6,7 +6,7 @@
 // - hello('DETROIT') should return 'Hello, DETROIT!'
 
 function helloDefault(aName) {
-  console.log("Hello, " + aName + "!")
+  console.log("Hello, " + aName + "!");
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

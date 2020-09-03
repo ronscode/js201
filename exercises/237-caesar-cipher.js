@@ -8,8 +8,17 @@
 // > cipher('We hold these truths to be self-evident', 8)
 // 'em pwtl bpmam bzcbpa bw jm amtn-mdqlmvb'
 
+function cipher(aString, shiftNum) {
+  aString = aString.toLowerCase();
+  let smallAlphabet = "abcdefghijklmnopqrstuvwxyz"
+  let theCipher = ""
+  for (letter of smallAlphabet) {
+    let currLetter = fullAlphabet.indexOf(letter);
+    if (currLetter + shiftNum )
+  }
+}
 
-
+cipher('We hold these truths to be self-evident', 8)
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "decipher" which is given a string, a shift, and returns the
 // decoded Caesar cipher message.

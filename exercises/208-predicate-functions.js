@@ -20,6 +20,17 @@
 // isVowel(99) --> false
 // isVowel({e: 'Elephant'}) --> false
 
+function isVowel(someLetter) {
+  // const vowelPattern = /[aeiouAEIOU]|[\{\}]/gm;
+  // return vowelPattern.test(someLetter);
+  let allVowels = ["A", "E", "I", "O", "U", "a", "e", "i", "o", "u"];
+  let isVowel = false;
+  if (allVowels.includes(someLetter)) {
+    isVowel = true;
+  }
+  return isVowel;
+}
+
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -36,7 +47,23 @@
 // isOdd('7') --> false
 // isOdd(3.14) --> false
 
+function isEven(someNum) {
+  if (typeof someNum != Number) {
+    return false;
+  } else if (someNum % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
+function isOdd(someNum) {
+  if (someNum % 2 != 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "isCapitalCity" that takes two arguments: a US state and a city name
@@ -52,3 +79,7 @@
 // isCapitalCity('Texas', 'Houston') --> false
 // isCapitalCity('Alaska', 'Juneau') --> true
 // isCapitalCity('Strawberry', 'Mango') --> false
+
+function isCapitalCity(aState,aCity) {
+  
+}

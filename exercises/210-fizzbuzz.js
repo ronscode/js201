@@ -9,3 +9,23 @@
 // Examples:
 // fizzbuzz(3) --> '..fizz'
 // fizzbuzz(15) --> '..fizz.buzzfizz..fizzbuzz.fizz..fizzbuzz'
+
+function fizzbuzz(someNum) {
+  let fizzbuzzString = "";
+  for (let i = 1; i <= someNum ; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      fizzbuzzString += "fizzbuzz"
+    }
+     else if (i % 3 === 0 ) {
+      fizzbuzzString += "fizz"
+    } else if (i % 5 === 0) {
+      fizzbuzzString += "buzz"
+    } else  {
+      fizzbuzzString += "."
+    }
+  }
+  console.log(fizzbuzzString)
+}
+
+fizzbuzz(3);
+fizzbuzz(15)
