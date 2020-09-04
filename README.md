@@ -1,5 +1,5 @@
 # JavaScript 201 - Programming Exercises
-Hello world! Hello students! 
+Hello world! Hello students! Hello James!
 
 Programming exercises for a beginning JavaScript programmer.
 
