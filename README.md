@@ -4,7 +4,7 @@ Hello world! Hello students!
 Programming exercises for a beginning JavaScript programmer.
 
 These exercises use Strings, loops, Objects, and Arrays to solve logic problems.
-
+Plz don't break
 ## Install
 
 Make sure that [Node.js] and [npm] are installed. Then, from this directory type:
